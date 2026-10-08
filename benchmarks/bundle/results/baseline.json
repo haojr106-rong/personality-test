@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "phase": "baseline",
+  "generatedAt": "2026-10-08T14:51:23.663Z",
+  "protocol": {
+    "source": "Vite production build manifest",
+    "scope": "JavaScript entry chunk and transitive static imports",
+    "compression": "Node.js gzipSync, summed per emitted file",
+    "excludes": "dynamic imports and non-JavaScript assets"
+  },
+  "entry": "index.html",
+  "files": [
+    {
+      "file": "assets/index-CVlB1O_-.js",
+      "rawBytes": 123697,
+      "gzipBytes": 51082
+    }
+  ],
+  "totals": {
+    "rawBytes": 123697,
+    "gzipBytes": 51082,
+    "rawKilobytes": 123.7,
+    "gzipKilobytes": 51.08
+  }
+}

@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "benchmark:web-vitals": "node benchmarks/web-vitals/benchmark.mjs"
+    "benchmark:web-vitals": "node benchmarks/web-vitals/benchmark.mjs",
+    "benchmark:bundle": "node benchmarks/bundle/benchmark.mjs"
   },
   "dependencies": {
     "clsx": "^2.1.1",
