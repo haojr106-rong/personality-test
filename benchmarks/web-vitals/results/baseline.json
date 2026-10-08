@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "phase": "baseline",
+  "generatedAt": "2026-10-08T14:24:09.459Z",
+  "protocol": {
+    "source": "Vite production build served by vite preview",
+    "browser": "local Google Chrome launched headlessly",
+    "lighthouseVersion": "12.8.2",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "runsPerRoute": 5,
+    "aggregation": "median",
+    "routes": [
+      {
+        "id": "home",
+        "path": "/"
+      },
+      {
+        "id": "quiz",
+        "path": "/quiz"
+      },
+      {
+        "id": "types",
+        "path": "/types"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "id": "home",
+      "label": "Home",
+      "path": "/",
+      "runs": [
+        {
+          "firstContentfulPaintMs": 1434.69,
+          "largestContentfulPaintMs": 1434.69
+        },
+        {
+          "firstContentfulPaintMs": 1438.14,
+          "largestContentfulPaintMs": 1438.14
+        },
+        {
+          "firstContentfulPaintMs": 1433.89,
+          "largestContentfulPaintMs": 1433.89
+        },
+        {
+          "firstContentfulPaintMs": 1436.33,
+          "largestContentfulPaintMs": 1436.33
+        },
+        {
+          "firstContentfulPaintMs": 1433.58,
+          "largestContentfulPaintMs": 1433.58
+        }
+      ],
+      "median": {
+        "firstContentfulPaintMs": 1434.69,
+        "largestContentfulPaintMs": 1434.69
+      }
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "path": "/quiz",
+      "runs": [
+        {
+          "firstContentfulPaintMs": 1498.44,
+          "largestContentfulPaintMs": 1560.22
+        },
+        {
+          "firstContentfulPaintMs": 1498.04,
+          "largestContentfulPaintMs": 1559.14
+        },
+        {
+          "firstContentfulPaintMs": 1497.86,
+          "largestContentfulPaintMs": 1558.98
+        },
+        {
+          "firstContentfulPaintMs": 1497.64,
+          "largestContentfulPaintMs": 1562.87
+        },
+        {
+          "firstContentfulPaintMs": 1496.93,
+          "largestContentfulPaintMs": 1559.44
+        }
+      ],
+      "median": {
+        "firstContentfulPaintMs": 1497.86,
+        "largestContentfulPaintMs": 1559.44
+      }
+    },
+    {
+      "id": "types",
+      "label": "Type list",
+      "path": "/types",
+      "runs": [
+        {
+          "firstContentfulPaintMs": 1653.65,
+          "largestContentfulPaintMs": 11489
+        },
+        {
+          "firstContentfulPaintMs": 1652.52,
+          "largestContentfulPaintMs": 11489.31
+        },
+        {
+          "firstContentfulPaintMs": 1653.1,
+          "largestContentfulPaintMs": 11490.2
+        },
+        {
+          "firstContentfulPaintMs": 1654.57,
+          "largestContentfulPaintMs": 11489.52
+        },
+        {
+          "firstContentfulPaintMs": 1661.17,
+          "largestContentfulPaintMs": 11490.99
+        }
+      ],
+      "median": {
+        "firstContentfulPaintMs": 1653.65,
+        "largestContentfulPaintMs": 11489.52
+      }
+    }
+  ]
+}
