@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ERTA",
+    "name": "操盘手",
+    "category": "秩序基石",
+    "subCategory": "现实 + 掌控",
+    "description": "卓越的现实管理者。以结果为导向，擅长在复杂系统中建立高效秩序。",
+    "color": "#7c3aed",
+    "avatarBg": "ffdad8",
+    "bannerBg": "#6d28d9"
+  },
+  {
+    "id": "IRTA",
+    "name": "精算师",
+    "category": "秩序基石",
+    "subCategory": "现实 + 掌控",
+    "description": "极致的理性主义者。尊崇客观框架，对专业领域与数据有着严苛标准。",
+    "color": "#7c3aed",
+    "avatarBg": "ffdad8",
+    "bannerBg": "#6d28d9"
+  },
+  {
+    "id": "ERHA",
+    "name": "赋能者",
+    "category": "秩序基石",
+    "subCategory": "现实 + 掌控",
+    "description": "高共情力的组织枢纽。擅长协调多方诉求，是团队中坚实的信任基石。",
+    "color": "#7c3aed",
+    "avatarBg": "ffdad8",
+    "bannerBg": "#6d28d9"
+  },
+  {
+    "id": "IRHA",
+    "name": "守护者",
+    "category": "秩序基石",
+    "subCategory": "现实 + 掌控",
+    "description": "内敛而坚定的支持者。注重承诺与细节，为周围环境提供扎实的安全感。",
+    "color": "#7c3aed",
+    "avatarBg": "ffdad8",
+    "bannerBg": "#6d28d9"
+  },
+  {
+    "id": "ERTF",
+    "name": "破局者",
+    "category": "机变原力",
+    "subCategory": "现实 + 随性",
+    "description": "资源整合的高手。拒绝刻板教条，具备极强的危机处理与实地洞察能力。",
+    "color": "#059669",
+    "avatarBg": "90fb7d",
+    "bannerBg": "#047857"
+  },
+  {
+    "id": "IRTF",
+    "name": "潜研者",
+    "category": "机变原力",
+    "subCategory": "现实 + 随性",
+    "description": "专注力极强的实干派。在独处中磨砺核心技能，以精湛技术应对未知。",
+    "color": "#059669",
+    "avatarBg": "90fb7d",
+    "bannerBg": "#047857"
+  },
+  {
+    "id": "ERHF",
+    "name": "共振者",
+    "category": "机变原力",
+    "subCategory": "现实 + 随性",
+    "description": "天生的外交与体验者。能迅速感知环境氛围，用高超的柔性化解矛盾。",
+    "color": "#059669",
+    "avatarBg": "90fb7d",
+    "bannerBg": "#047857"
+  },
+  {
+    "id": "IRHF",
+    "name": "鉴赏家",
+    "category": "机变原力",
+    "subCategory": "现实 + 随性",
+    "description": "平和从容的唯美主义者。发掘日常美感，抗拒无效内卷，追求内心宁静。",
+    "color": "#059669",
+    "avatarBg": "90fb7d",
+    "bannerBg": "#047857"
+  },
+  {
+    "id": "EVTA",
+    "name": "战略家",
+    "category": "远见智囊",
+    "subCategory": "构想 + 掌控",
+    "description": "具备宏观视野的擘画者。不仅拥有改变规则的蓝图，更具备强悍的驱动手腕。",
+    "color": "#3b82f6",
+    "avatarBg": "e0f2fe",
+    "bannerBg": "#2563eb"
+  },
+  {
+    "id": "IVTA",
+    "name": "执棋者",
+    "category": "远见智囊",
+    "subCategory": "构想 + 掌控",
+    "description": "深谙底层逻辑的幕后智囊。习惯进行多维沙盘推演，以高缜密度掌控全局。",
+    "color": "#3b82f6",
+    "avatarBg": "e0f2fe",
+    "bannerBg": "#2563eb"
+  },
+  {
+    "id": "EVHA",
+    "name": "启迪者",
+    "category": "远见智囊",
+    "subCategory": "构想 + 掌控",
+    "description": "精神领域的灯塔。以极强的感染力传达愿景，致力于赋能群体的认知跨越。",
+    "color": "#3b82f6",
+    "avatarBg": "e0f2fe",
+    "bannerBg": "#2563eb"
+  },
+  {
+    "id": "IVHA",
+    "name": "缔造者",
+    "category": "远见智囊",
+    "subCategory": "构想 + 掌控",
+    "description": "理想主义的坚守者。内心拥有恢弘的精神殿堂，以苛刻标准打磨思想体系。",
+    "color": "#3b82f6",
+    "avatarBg": "e0f2fe",
+    "bannerBg": "#2563eb"
+  },
+  {
+    "id": "EVTF",
+    "name": "拓荒者",
+    "category": "无界星火",
+    "subCategory": "构想 + 随性",
+    "description": "打破常规的创新引擎。对新知极度渴望，善于在交叉领域发现前沿可能性。",
+    "color": "#d97706",
+    "avatarBg": "fef08a",
+    "bannerBg": "#b45309"
+  },
+  {
+    "id": "IVTF",
+    "name": "思辨者",
+    "category": "无界星火",
+    "subCategory": "构想 + 随性",
+    "description": "形而上的独立学者。热衷于解构复杂系统，探寻事物最核心的哲学本质。",
+    "color": "#d97706",
+    "avatarBg": "fef08a",
+    "bannerBg": "#b45309"
+  },
+  {
+    "id": "EVHF",
+    "name": "吟游者",
+    "category": "无界星火",
+    "subCategory": "构想 + 随性",
+    "description": "被内在热情驱动的体验派。厌倦千篇一律，追逐直击灵魂的生活美学与共鸣。",
+    "color": "#d97706",
+    "avatarBg": "fef08a",
+    "bannerBg": "#b45309"
+  },
+  {
+    "id": "IVHF",
+    "name": "织梦人",
+    "category": "无界星火",
+    "subCategory": "构想 + 随性",
+    "description": "难以被定义的精神漫游者。遵循纯粹的直觉与内心的道德律令，拒绝世俗束缚。",
+    "color": "#d97706",
+    "avatarBg": "fef08a",
+    "bannerBg": "#b45309"
+  }
+]
