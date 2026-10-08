@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "phase": "optimized",
+  "generatedAt": "2026-10-08T14:37:59.803Z",
+  "protocol": {
+    "source": "Vite production build served by vite preview",
+    "browser": "local Google Chrome launched headlessly",
+    "lighthouseVersion": "12.8.2",
+    "formFactor": "mobile",
+    "throttlingMethod": "simulate",
+    "runsPerRoute": 5,
+    "aggregation": "median",
+    "routes": [
+      {
+        "id": "home",
+        "path": "/"
+      },
+      {
+        "id": "quiz",
+        "path": "/quiz"
+      },
+      {
+        "id": "types",
+        "path": "/types"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "id": "home",
+      "label": "Home",
+      "path": "/",
+      "runs": [
+        {
+          "firstContentfulPaintMs": 1441.7,
+          "largestContentfulPaintMs": 1441.7
+        },
+        {
+          "firstContentfulPaintMs": 1437.46,
+          "largestContentfulPaintMs": 1437.46
+        },
+        {
+          "firstContentfulPaintMs": 1437.13,
+          "largestContentfulPaintMs": 1437.13
+        },
+        {
+          "firstContentfulPaintMs": 1437.68,
+          "largestContentfulPaintMs": 1437.68
+        },
+        {
+          "firstContentfulPaintMs": 1443.95,
+          "largestContentfulPaintMs": 1443.95
+        }
+      ],
+      "median": {
+        "firstContentfulPaintMs": 1437.68,
+        "largestContentfulPaintMs": 1437.68
+      }
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz",
+      "path": "/quiz",
+      "runs": [
+        {
+          "firstContentfulPaintMs": 1500.38,
+          "largestContentfulPaintMs": 1558.82
+        },
+        {
+          "firstContentfulPaintMs": 1500.92,
+          "largestContentfulPaintMs": 1556.01
+        },
+        {
+          "firstContentfulPaintMs": 1501.36,
+          "largestContentfulPaintMs": 1563.47
+        },
+        {
+          "firstContentfulPaintMs": 1509.76,
+          "largestContentfulPaintMs": 1576.49
+        },
+        {
+          "firstContentfulPaintMs": 1499.59,
+          "largestContentfulPaintMs": 1558.95
+        }
+      ],
+      "median": {
+        "firstContentfulPaintMs": 1500.92,
+        "largestContentfulPaintMs": 1558.95
+      }
+    },
+    {
+      "id": "types",
+      "label": "Type list",
+      "path": "/types",
+      "runs": [
+        {
+          "firstContentfulPaintMs": 1580.5,
+          "largestContentfulPaintMs": 2247.26
+        },
+        {
+          "firstContentfulPaintMs": 1587.97,
+          "largestContentfulPaintMs": 2322.31
+        },
+        {
+          "firstContentfulPaintMs": 1579.94,
+          "largestContentfulPaintMs": 2321.16
+        },
+        {
+          "firstContentfulPaintMs": 1578.79,
+          "largestContentfulPaintMs": 2320.12
+        },
+        {
+          "firstContentfulPaintMs": 1583.14,
+          "largestContentfulPaintMs": 2320.2
+        }
+      ],
+      "median": {
+        "firstContentfulPaintMs": 1580.5,
+        "largestContentfulPaintMs": 2320.2
+      }
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import { getTypesByCategoryName } from '@/lib/type-utils'
+import { getTypesByCategoryName } from '@/lib/type-catalog'
 
 const router = useRouter()
 
-// 批量导入 16 型人格 PNG 图片，构建类型ID → 图片URL 的映射
-const imageModules = import.meta.glob('@/assets/16_type/**/*.png', {
+// 批量导入 16 型人格 WebP 图片，构建类型ID → 图片URL 的映射
+const imageModules = import.meta.glob('@/assets/16_type/**/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -13,7 +13,7 @@ const imageModules = import.meta.glob('@/assets/16_type/**/*.png', {
 
 const typeImages = {}
 for (const [filePath, url] of Object.entries(imageModules)) {
-  const match = filePath.match(/([A-Z]+)（.+）\.png$/)
+  const match = filePath.match(/([A-Z]+)（.+）\.webp$/)
   if (match) {
     typeImages[match[1]] = url
   }
@@ -132,7 +132,7 @@ function clipPath(index) {
           <!-- Type Cards -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div
-              v-for="type in getTypesByCategory(cat.key)"
+              v-for="(type, typeIndex) in getTypesByCategory(cat.key)"
               :key="type.id"
               class="group bg-white rounded-xl p-8 shadow-[0_20px_50px_rgba(115,77,133,0.1)] hover:-translate-y-2 transition-transform duration-300"
             >
@@ -143,6 +143,8 @@ function clipPath(index) {
                 <img
                   :alt="type.id"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+                  :fetchpriority="idx === 0 && typeIndex === 0 ? 'high' : 'auto'"
+                  :loading="idx === 0 && typeIndex === 0 ? 'eager' : 'lazy'"
                   :src="typeImages[type.id]"
                 />
               </div>

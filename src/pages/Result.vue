@@ -29,14 +29,14 @@ function restartQuiz() {
 }
 
 /* ========== 头像图片加载 ========== */
-const imageModules = import.meta.glob('@/assets/16_type/**/*.png', {
+const imageModules = import.meta.glob('@/assets/16_type/**/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
 })
 const typeImages = {}
 for (const [filePath, url] of Object.entries(imageModules)) {
-  const match = filePath.match(/([A-Z]+)[（(].+[）)].*\.png$/)
+  const match = filePath.match(/([A-Z]+)[（(].+[）)].*\.webp$/)
   if (match) typeImages[match[1]] = url
 }
 const avatarUrl = computed(() => typeImages[result.value.typeId] || '')

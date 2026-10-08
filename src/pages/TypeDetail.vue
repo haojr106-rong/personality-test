@@ -1,7 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { getTypeById, CATEGORY_STYLES } from '@/lib/type-utils'
+import { getTypeById, CATEGORY_STYLES } from '@/lib/type-catalog'
 
 const router = useRouter()
 const route = useRoute()
@@ -10,14 +10,14 @@ const typeId = computed(() => route.params.id?.toUpperCase() || 'INTP')
 const type = computed(() => getTypeById(typeId.value))
 
 // 批量导入头像图片
-const imageModules = import.meta.glob('@/assets/16_type/**/*.png', {
+const imageModules = import.meta.glob('@/assets/16_type/**/*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
 })
 const typeImages = {}
 for (const [filePath, url] of Object.entries(imageModules)) {
-  const match = filePath.match(/([A-Z]+)（.+）\.png$/)
+  const match = filePath.match(/([A-Z]+)（.+）\.webp$/)
   if (match) typeImages[match[1]] = url
 }
 
