@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "phase": "optimized",
+  "generatedAt": "2026-10-08T15:00:06.537Z",
+  "protocol": {
+    "source": "Vite production build manifest",
+    "scope": "JavaScript entry chunk and transitive static imports",
+    "compression": "Node.js gzipSync, summed per emitted file",
+    "excludes": "dynamic imports and non-JavaScript assets"
+  },
+  "entry": "index.html",
+  "files": [
+    {
+      "file": "assets/index-CCEsfedC.js",
+      "rawBytes": 101869,
+      "gzipBytes": 40147
+    }
+  ],
+  "totals": {
+    "rawBytes": 101869,
+    "gzipBytes": 40147,
+    "rawKilobytes": 101.87,
+    "gzipKilobytes": 40.15
+  }
+}

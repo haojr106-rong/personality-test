@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/Home.vue'
-import { useQuizStore } from '@/stores/quiz'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -39,9 +38,10 @@ const router = createRouter({
   ],
 })
 
-router.beforeEach((to) => {
+router.beforeEach(async (to) => {
   if (!to.meta.requiresCompletedQuiz) return true
 
+  const { useQuizStore } = await import('@/stores/quiz')
   const quizStore = useQuizStore()
   if (quizStore.allAnswered) return true
 

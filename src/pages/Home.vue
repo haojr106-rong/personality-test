@@ -1,20 +1,16 @@
 <script setup>
-import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useQuizStore } from '@/stores/quiz'
+import { readQuizProgress } from '@/lib/quiz-progress'
+import { TOTAL_QUESTIONS } from '@/quiz-config'
 
 const router = useRouter()
-const store = useQuizStore()
+const progress = readQuizProgress()
 
-const primaryAction = computed(() => {
-  if (store.allAnswered) {
-    return { label: '查看测评报告', path: '/result' }
-  }
-  if (store.hasSavedProgress) {
-    return { label: `继续测试（${store.answeredCount}/60）`, path: '/quiz' }
-  }
-  return { label: '开始测试', path: '/quiz' }
-})
+const primaryAction = progress.allAnswered
+  ? { label: '查看测评报告', path: '/result' }
+  : progress.hasSavedProgress
+    ? { label: `继续测试（${progress.answeredCount}/${TOTAL_QUESTIONS}）`, path: '/quiz' }
+    : { label: '开始测试', path: '/quiz' }
 </script>
 
 <template>

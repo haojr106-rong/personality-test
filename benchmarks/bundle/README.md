@@ -29,3 +29,11 @@ summed, matching the fact that browsers download chunks as separate responses.
 This is a deterministic build-size measurement rather than a runtime timing.
 Before/after comparisons must use the same source fixture, dependency versions,
 Node.js version, Vite version, and compression method.
+
+## Optimization result
+
+The initial JavaScript payload changed from `123.70 kB` to `101.87 kB` raw
+(`17.65%` lower) and from `51.08 kB` to `40.15 kB` Gzip (`21.41%` lower).
+The full quiz store and question data now load only when a route needs them.
+Raw reports are preserved in `results/baseline.json` and
+`results/optimized.json`.
